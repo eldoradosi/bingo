@@ -13,7 +13,7 @@
 
 body
 {
-      background: #D8E8F5;
+      background-color:beige;
       margin: 50px 0;
       padding: 0;
       text-align: center;
@@ -26,7 +26,7 @@ body
 header
 {
     flex: 1 1 15%;
-    background-color:aqua;
+    background-color: brown;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -100,10 +100,18 @@ main li
     padding: 2px;  
 }
 
+.cartones
+{
+    border: 1px solid black;
+    padding: 15px;   
+}
+
 main table 
 {
     position: relative;
     border: 1px solid black;
+    font: 14px verdana, sans-serif, bold;
+    padding: 15px;
 }
 
 main td
@@ -121,7 +129,7 @@ main td
 footer
 {
     flex: 1 1 5%;
-    background-color: aqua;   
+    background-color: brown;   
     max-height: 5vh;
     justify-self: flex-end;
 }
