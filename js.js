@@ -42,7 +42,7 @@ var cantados_en_carton = new Array();
 function resaltar_en_tabla( fila, columna, si)
 {
     // fila + 1 a causa de la cabecera de tabla
-    document.getElementById("myTableData").rows[fila+1].cells[columna].style.backgroundColor = si ? "\#ff0000" : "\#D8E8F5";
+    document.getElementById("datos_cartones").rows[fila+1].cells[columna].style.backgroundColor = si ? "\#ff0000" : "\#D8E8F5";
 }
 
 // se cantó una nueva bola
@@ -107,7 +107,7 @@ function resaltar_bola_cantada(myId)
 
 function agregar_carton_a_tabla( id_carton)
 {
-    var tabla = document.getElementById("myTableData");
+    var tabla = document.getElementById("datos_cartones");
 
     var cant_filas = tabla.rows.length;
     var fila = tabla.insertRow( cant_filas);
