@@ -42,7 +42,7 @@ var cantados_en_carton = new Array();
 function resaltar_en_tabla( fila, columna, si)
 {
     // fila + 1 a causa de la cabecera de tabla
-    document.getElementById("datos_cartones").rows[fila+1].cells[columna].style.backgroundColor = si ? "\#ff0000" : "\#D8E8F5";
+    document.getElementById("datos_cartones").rows[fila+1].cells[columna].style.backgroundColor = si ? "red" : "beige";
 }
 
 // se cantó una nueva bola
@@ -93,13 +93,13 @@ function resaltar_bola_cantada(myId)
 
     if ( !bola_cantada[myId] )
     {
-        myCell.style.backgroundColor = "\#ff0000";
+        myCell.style.backgroundColor = "red";
         bola_cantada[myId] = 1; // marcar como cantado
         nueva_bola( myId, 1);
     }
     else
     {
-        myCell.style.backgroundColor = "\#D8E8F5";
+        myCell.style.backgroundColor = "aquamarine";
         bola_cantada[myId] = 0; // marcar como no cantado
         nueva_bola( myId, 0);
     }

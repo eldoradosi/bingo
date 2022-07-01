@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="estilos\estilos.css">
     <script src="https://kit.fontawesome.com/1f3100a2b0.js" crossorigin="anonymous"></script>
+    <script src="validar.js"></script>
     <title>WebBingo 1.1 - Contacto</title>
     <!-- Mario Alberto López, Comisión 22084, Curso Full Stack-Python -->
 </head>
@@ -16,13 +17,42 @@
 <body>
     <header>
         <div class="barra_header"><h3> WebBingo 1.1 </h3></div>
-        <ul id="HeaderItem2">
-            <li id="primerItem"> <a href="index.html" target="_self">Reiniciar Juego</a></li>
-            <li> <a href="Acerca.html">Acerca de</a></li>
-            <li> <a href="Contacto.html">Contacto</a> </li>
+        <div class="contenedor_imagen"><img src="img/Bingo_Cards.jpg" alt=""> </div>
+        <ul>
+            <li> <a href="index.html" target="_self">Reiniciar juego </a></li>
+            <li> <a href="Acerca.html"> Acerca de </a></li>
+            <li> <a href="Contacto.html"> Contacto</a> </li>
         </ul>
     </header>
-    <h1>Contacto</h1>
+
+
+    <main>
+         <h3>Por favor llená este formulario para consultas o sugerencias:</h3>
+
+        <form name="formulario" onsubmit="return validar_formulario()">
+            <div class="renglonForm">
+                <label for="nombre">Nombre *</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre">
+             </div>
+
+            <div class="renglonForm">
+                <label for="Telefono">Telefono *</label>
+                <input type="tel" id="Telefono" name="telefono" placeholder="Tu telefono" placeholder="123456789">
+            </div>
+
+            <div class="renglonForm">
+                <label for="Email">Email *</label>
+                <input type="email" id="Email" name="email" placeholder="Tu Email"  placeholder="mi-email@ejemplo.com">
+            </div>
+
+            <div class="renglonForm">
+                <label for="Comentarios">Comentarios </label>
+                <textarea type="textinput" placeholder="Tus comentarios"></textarea>
+            </div>
+            <input class="boton" type="submit" value="Enviar">
+        </form>
+
+    </main>
 
     <footer>
         <div class="redes_sociales"> 

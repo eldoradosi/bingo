@@ -3,10 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
- }
+}
 
- html
- {
+html
+{
     max-width: 100%;
     max-height: 100%;
 }
@@ -14,7 +14,7 @@
 body
 {
       background-color:beige;
-      margin: 50px 0;
+      margin: 0;
       padding: 0;
       text-align: center;
       font-family: 'PT Sans', sans-serif;
@@ -22,6 +22,7 @@ body
 
 
 /* <header> */
+
 
 header
 {
@@ -33,10 +34,8 @@ header
     justify-content: flex-end;
     align-items: center;
     background-size: 25% auto;
-    background-image: url(../img/Bingo_Cards.jpg);
     background-repeat: no-repeat;
-    background-position: left;   
-    background-repeat: no-repeat;
+    background-position: left;  
     justify-self: flex-start;
 }
 
@@ -53,27 +52,57 @@ header
     text-underline-offset: 20px;
 }
 
-header ul, li 
+header li 
 {
     display: inline-table;
     align-content: flex-end;
     place-items: center stretch;
+    font: white;
 }
 
-#HeaderItem2
+
+.contenedor_imagen
 {
+    display: flex;
     justify-content: center;
-    font-family: 'Manrope', sans-serif;
-    align-items: center;
-    padding: 15px;
+    align-items: right;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    border-bottom: 0;
+    padding-bottom: 20px;
 }
 
+.contenedor_imagen img
+{
+    width: 25%;
+    height: 25%;
+    transition: all 4.0s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.contenedor_imagen img:hover
+{
+    transform: scale(1.2);
+}
+
+header a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color:beige;
+}
+
+header a:hover 
+{
+    font-weight: bold;
+    transform-origin: top left;
+}
 
 /* <main> */
 
 main
 {
-    display: block;
+    display: inline-table;
     position: relative;
     border: 1px solid black;
     font: 10px verdana, sans-serif, bold;
@@ -85,40 +114,47 @@ main
 
 .numeros_cantados
 {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    align-content: flex-end;
+    place-items: center stretch;
+    border: 5px solid black;
     padding: 15px;
+    background-color:aquamarine;
 }
 
 main li 
 {
+    display: inline-table;
     align-self: flex-end;
     width: 50px;
     height: 50px;
     text-align: center;
     font: 14px verdana, sans-serif, bold;
-    border: 1px solid black;
-    padding: 2px;  
+    border: 2px solid black;
+    padding: 2px;
 }
 
 .cartones
 {
-    border: 1px solid black;
+    align-self: center;
+    border: 2px solid black;
     padding: 15px;   
 }
 
 main table 
 {
     position: relative;
-    border: 1px solid black;
-    font: 14px verdana, sans-serif, bold;
+    border: 5px solid black;
     padding: 15px;
+    font: 14px verdana, sans-serif, bold;
 }
 
 main td
 {
     width: 50px;
     height: 50px;
-    border: 1px solid black;
+    border: 2px solid black;
     padding: 2px;
 }
 
@@ -141,3 +177,66 @@ footer
     padding: 10px;
     gap: 40px;
 }
+
+
+/* formulario */
+
+#formulario
+{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    box-sizing: border-box;
+    border-left: 2px solid;
+    padding-left: 30px;
+    padding-top: 20px;
+    text-align: left;
+    line-height: 40px;
+    font-size: 16px;
+    align-content: center;
+}
+
+#camposFormulario
+{
+    max-width: 100%;
+    display: block;
+
+}
+
+
+.renglonForm
+{
+    max-width: 100%;
+    display: block;
+    padding: 10px 0px;
+}
+
+.renglonForm label{
+    display: inline-block;
+}
+
+
+.renglonForm input,textarea
+{
+    display: block;
+    width: 40%;
+    padding: 10px 10px;
+    border: 1px solid black;
+    font-size: 16px; 
+    resize: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+.boton 
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: 0.3s;
+  }
+  .boton:hover {opacity: 1.5}

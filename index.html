@@ -17,16 +17,17 @@
 <body onload="javascript:inicializar()">
     <header>
         <div class="barra_header"><h3> WebBingo 1.1 </h3></div>
-        <ul id="HeaderItem2">
-            <li id="primerItem"> <a href="index.html" target="_self">Reiniciar Juego</a></li>
-            <li> <a href="Acerca.html">Acerca de</a></li>
-            <li> <a href="Contacto.html">Contacto</a> </li>
+        <div class="contenedor_imagen"><img src="img/Bingo_Cards.jpg" alt=""> </div>
+        <ul>
+            <li> <a href="index.html" target="_self">Reiniciar juego </a></li>
+            <li> <a href="Acerca.html"> Acerca de </a></li>
+            <li> <a href="Contacto.html"> Contacto</a> </li>
         </ul>
     </header>
                 
     <main>
         <div class="numeros_cantados">
-            <h2>Seleccione aquí el número cantado</h2>
+            <h2>Seleccione aquí los números cantados</h2>
 
             <ul>
                 <li id="1" onclick="javascript:resaltar_bola_cantada(this.id);"> </li>
@@ -132,6 +133,7 @@
         </div>
 
         <div class="cartones">
+            <h2> Cartones </h2>
             <table id="datos_cartones">
             <tr>
                     
