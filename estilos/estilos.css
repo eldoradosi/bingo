@@ -166,7 +166,6 @@ footer
 {
     flex: 1 1 5%;
     background-color: brown;   
-    max-height: 5vh;
     justify-self: flex-end;
 }
 
